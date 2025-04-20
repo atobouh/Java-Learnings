@@ -18,7 +18,7 @@ public class App {
         inventory.displayItems();
         System.out.println(greetings.length());
         System.out.println(add(greetings.length(),4));
-        
+        System.out.println(ratio(10,5));
     }
     public static int add(int a,int n){
         return a+n;
