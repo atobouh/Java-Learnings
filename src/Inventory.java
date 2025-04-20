@@ -1,21 +1,19 @@
- import java.util.ArrayList;
- 
- 
- public class Inventory {
+import java.util.ArrayList;
 
-    private ArrayList<Items> items;// Naming an array list item
-   
-    public Inventory(){
-        items = new ArrayList<Items>(); // Initialize the array list item
+public class Inventory {
+    private ArrayList<Items> items;
+
+    public Inventory() {
+        items = new ArrayList<>();
     }
 
-    public void AddItem(Items item){
-        items.add(item); // Add item to the array list
+    public void addItem(Items item) {
+        items.add(item);
     }
-    
-    public void displayItems(){
-        for(Items items:items){
-            System.out.println(items.getName() + " - " + items.getQuantity());
+
+    public void displayItems() {
+        for (Items item : items) {
+            System.out.println(item.getDescription());
         }
     }
 }
